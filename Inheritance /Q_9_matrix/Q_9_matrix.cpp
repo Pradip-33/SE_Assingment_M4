@@ -12,7 +12,7 @@ class Matrix
 };
 void Matrix::accept()
 {
-        cout<<"\n Enter Matrix Element (3 X 3) : ";
+        cout<<"\n Enter Matrix Element (3 X 3) :\n ";
         for(int i=0; i<3; i++)
         {
                 for(int j=0; j<3; j++)
@@ -44,7 +44,7 @@ void Matrix::operator +(Matrix x)
                         mat[i][j]=a[i][j]+x.a[i][j];
                 }
         }
-        cout<<"\n Addition of Matrix :";
+        cout<<"\n Addition of Matrix :\n";
         for(int i=0; i<3; i++)
         {
                 cout<<" ";
@@ -60,9 +60,9 @@ int main()
         Matrix m,n;
         m.accept();            
         n.accept();          
-        cout<<"\n First Matrix : ";
+        cout<<"\n First Matrix : \n";
         m.display();           
-        cout<<"\n Second Matrix :";
+        cout<<"\n Second Matrix : \n";
         n.display();         
         m+n;                  
         
